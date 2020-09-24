@@ -1,0 +1,125 @@
+* {
+    --large-text: white;
+  }
+  
+  body{ 
+    background-color: #d3d3d3;
+    margin: 20px;
+    font-family: sans serif;
+  }
+  
+  main{
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  h1,
+  header{
+    display: flex;
+    justify-content: center;
+  }
+  
+  header {
+    max-height: 200px;
+  }
+  
+  h2,h4 {
+    color: black;
+  }
+  
+  .profile-pic {
+    max-height: 200px;
+  }
+  
+  #info, #tech{
+    display: flex;
+  }
+  
+  #info {
+    margin-bottom: 20px;
+  }
+  
+  .bio {
+    width: 100%;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #choose-list {
+    background-color: #ebebeb;
+    padding: 8px;
+  }
+  
+  #name-date {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #name-date {
+    color: #01385e;
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  #tech {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #01385e;
+    margin: 0;
+  }
+  
+  h4 {
+    color: #01385e;
+    margin: 5px 0 12px 0;
+  }
+  
+  .excited {
+    background-color: #ebebeb;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .excited p {
+   color: black;
+  }
+  
+  time {
+    color: #black;
+    font: 1.5em "Fira Sans", sans-serif;
+  }
+  
+  ul {
+    margin: 0;
+    padding-left: 15px;
+    color: black;
+  }
+  
+  figure{ 
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  figure > img{
+    max-height: 180px;
+    max-width: 180px;
+  }
+  
+  figcaption{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ccc;
+    max-width: 180px;
+    text-align: center;
+    position: relative;
+    top:-20px;
+  }
+  
+  footer{
+    color: #000;
+    text-align: center;
+  }
