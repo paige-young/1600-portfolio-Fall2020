@@ -66,7 +66,7 @@ body {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
     width: 100%;
     max-width: 1280px;
@@ -74,9 +74,25 @@ body {
     margin-bottom: 6rem;
 }
 
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+.project-title {
+    font-size: x-large;
+    text-align: center;
+}
+
 a{ 
     text-decoration: none;
     color: red;
+}
+
+a img{
+    border-radius: 5%;;
 }
 
 .contact-section {
@@ -90,8 +106,6 @@ a{
     padding: 0 2rem;
     background: #303841;
   }
-
-  
 
   .contact-links {
     display: flex;
