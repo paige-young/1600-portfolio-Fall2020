@@ -21,8 +21,8 @@ body {
 #navbar {
     display: flex;
     justify-content: flex-end;
-    background-color: white;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    background-color: #BD8C7D;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -37,7 +37,8 @@ body {
 }
 
 .nav-list a:hover {
-    background: blue;
+    background: white;
+    color:#BD8C7D;
 }
 
 .nav-list {
@@ -54,14 +55,21 @@ body {
     width: 100%;
     height: 100vh;
     color: #fff;
-    background-image: linear-gradient(62deg, #2D545E 0%, #12343B 100%);
+    background-image: linear-gradient(62deg, #8E8E90 0%, #727275 50%, #49494B 100%);
     font-size: x-large;
 }
 
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: #45567d;
+    background: #D1BFA7;
+    color: white;
+    font-size: large;
+}
+
+.projects-section h2 {
+    font-size: large;
+    padding: 0 0 5px 0;
 }
 
 .projects-grid {
@@ -88,7 +96,12 @@ body {
 
 a{ 
     text-decoration: none;
-    color: red;
+    color: white;
+}
+
+.project-image {
+    height: 250px;
+    width: 300px;
 }
 
 a img{
@@ -104,7 +117,9 @@ a img{
     width: 100%;
     height: 80vh;
     padding: 0 2rem;
-    background: #303841;
+    background: #8E8E90;
+    color: white;
+    font-size: large;
   }
 
   .contact-links {
