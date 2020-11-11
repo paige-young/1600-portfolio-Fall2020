@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body{ 
+    background-image: url('/images/starbackground.jpg');
+}
+
 .mainHeader {
     display: flex;
     justify-content: space-around;
@@ -21,4 +25,25 @@ figure {
 
 figure img {
     max-height: 12rem;
+}
+
+figcaption {
+    background-color: #111111;
+    color: #FFE81F;
+    font-size: large;
+    text-align: center;
+    padding: 5px 0 5px 0; 
+}
+
+button {
+    padding: .5rem; 
+    background-color: white;
+    color: black;
+}
+
+header {
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    color: #FFE81F;
+    font-size: x-large;
 }

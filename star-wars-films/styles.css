@@ -3,6 +3,17 @@
     box-sizing: border-box;
 }
 
+header {
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    color: #FFE81F;
+    font-size: x-large;
+}
+
+body {
+    background-image: url('/images/starbackground.jpg');
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +25,9 @@ figure {
 }
 
 figcaption {
-    background-color: red;
+    color: #FFE81F;
+    background-color: #111111;
+    padding: 5px;
     text-align: center;
+    font-size: x-large;
 }

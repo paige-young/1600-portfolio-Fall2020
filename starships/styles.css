@@ -3,6 +3,17 @@
     box-sizing: border-box;
 }
 
+header {
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    color: #FFE81F;
+    font-size: x-large;
+}
+
+body {
+    background-image: url('/images/starbackground.jpg');
+}
+
 .container {
     display: flex;
 }
