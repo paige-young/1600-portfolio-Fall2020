@@ -3,8 +3,8 @@
     box-sizing: border-box;
 }
 
-body{ 
-    background-color: #FFE81F;
+body {
+    background-image: url('/images/starbackground.jpg');
 }
 
 .mainHeader {
@@ -44,6 +44,6 @@ button {
 header {
     text-align: center;
     margin: 2rem 0 1rem 0;
-    color: black;
+    color: #FFE81F;
     font-size: x-large;
 }
