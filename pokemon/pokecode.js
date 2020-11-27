@@ -22,6 +22,12 @@ function loadPage() {
 }
 
 const pokemonGrid = document.querySelector('.pokemonGrid')
+const loadButton = document.querySelector('button')
+
+loadButton.addEventListener('click', () => {
+    loadPage()
+    loadButton.disabled = true
+})
 
 function populatePokeCard(pokemon) {
     let pokeScene = document.createElement('div')
@@ -67,4 +73,14 @@ function getImageFileName(pokemon) {
     }
 }
 
-loadPage()
+function Pokemon(name, height, weight, abilities) {
+    this.name = name
+    this.height = height
+    this.weight = weight
+    this.abilities = abilities
+    this.id = 900
+}
+
+let paigeypoo = new Pokemon('Paigeypoo', 450, 200, ['smash', 'slice'])
+console.log(paigeypoo)
+
