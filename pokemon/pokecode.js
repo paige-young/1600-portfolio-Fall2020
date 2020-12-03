@@ -23,11 +23,34 @@ function loadPage() {
 
 const pokemonGrid = document.querySelector('.pokemonGrid')
 const loadButton = document.querySelector('button')
+const newButton = document.querySelector('#newPokemon')
 
 loadButton.addEventListener('click', () => {
     loadPage()
     loadButton.disabled = true
 })
+
+newButton.addEventListener('click', () => {
+    let pokeName = prompt("What's your new Pokemon's name?");
+    populatePokeCard(createNewPokemon(pokeName))
+  })
+
+/* mudsDaleButton.addEventListener('click', () => {
+    getAPIData(`https://pokeapi.co/api/v2/pokemon/750`).then
+        (async (data) => {
+            let mudMoves = document.createElement('ul')
+            data.moves.forEach(move => {
+                console.log(move.move.name)
+                let moveItem = document.createElement('li')
+                moveItem.textContent = move.move.name
+                mudMoves.appendChild(moveItem)
+            })
+            let mudImage = document.createElement('img')
+            mudImage.src = `../images/pokemon/750.png`
+            pokemonGrid.appendChild(mudMoves)
+            pokemonGrid.appendChild(mudImage)
+    })
+}) */
 
 function populatePokeCard(pokemon) {
     let pokeScene = document.createElement('div')
@@ -68,19 +91,22 @@ function populateCardBack(pokemon) {
         abilityList.appendChild(abilityName)
     })
     let movesLabel = document.createElement('h3')
-    movesLabel.textContent = 'Most Accurate Move:'
+    movesLabel.textContent = 'Stats:'
     let moveAccuracy = document.createElement('h4')
-    const mostAccurateMove = getBestAccuracyAndPower(pokemon.moves)
+    let pokeWeight = document.createElement('h5')
+    pokeWeight.textContent = `Weight: ${pokemon.weight} lbs.`
+    //const mostAccurateMove = getBestAccuracyAndPower(pokemon.moves)
     //console.log(mostAccurateMove.move)
     //moveAccuracy.textContent = `${mostAccurateMove.move.name}`
     cardBack.appendChild(backLabel)
     cardBack.appendChild(abilityList)
     cardBack.appendChild(movesLabel)
     cardBack.appendChild(moveAccuracy)
+    cardBack.appendChild(pokeWeight)
     return cardBack
 }
 
-function getBestAccuracy(pokemoves) {
+function getBestAccuracyAndPower(pokemoves) {
     return pokemoves.reduce((mostAccurate, move) => {
         //console.log(move.move.url)
         getAPIData(move.move.url).then
@@ -99,7 +125,7 @@ function getImageFileName(pokemon) {
     }
 }
 
-function Pokemon(name, height, weight, abilities) {
+function Pokemon(name, height, weight, abilities, moves) {
     this.name = name
     this.height = height
     this.weight = weight
@@ -107,6 +133,8 @@ function Pokemon(name, height, weight, abilities) {
     this.id = 900
 }
 
-let paigeypoo = new Pokemon('Paigeypoo', 450, 200, ['smash', 'slice'])
-console.log(paigeypoo)
+function createNewPokemon(name) {
+    return new Pokemon('Paigeypoo', 450, 200, ['smash', 'slice'], ['run', 'splash'])
+}
+
 
