@@ -31,9 +31,6 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    color: #FFDE00;
-    text-align: center;
-    padding: 10px 0 20px 0;
   }
 
   .card__face--front {
@@ -41,12 +38,16 @@
     border-style: solid;
     border-width: 4px;
     border-color: black;
+    color: #FFDE00;
+    text-align: center;
+    padding: 10px 0 20px 0;
   }
   
   .card__face--back {
-    background: #444;
+    background: #FFDE00;
     color: #eee;
     transform: rotateY(180deg);
+    color: #3B4CCA;
   }
 
   .card.is-flipped {
