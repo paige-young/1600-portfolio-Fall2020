@@ -40,15 +40,21 @@
     border-color: black;
     color: #FFDE00;
     text-align: center;
+    font-size: 25px;
     padding: 10px 0 20px 0;
   }
   
   .card__face--back {
     background: #FFDE00;
-    color: #eee;
+    color: black;
     transform: rotateY(180deg);
-    color: #3B4CCA;
+  
   }
+
+  .card__face--back h3 {
+    padding: 20px 0 10px 20px;
+    font-size: 20px;
+  } 
 
   .card.is-flipped {
     transform: rotateY(180deg);
