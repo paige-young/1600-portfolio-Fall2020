@@ -3,6 +3,32 @@
     box-sizing: border-box;
 }
 
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+body {
+  background-color: #d3d3d3;
+}
+
+header h1 {
+  text-align: center;
+  padding: 30px 0 20px 0;
+  font-size: 36px;
+}
+
+button, #newPokemon{
+  padding: 10px 20px;
+  color: #3B4CCA;
+  background-color: #FFDE00;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px black;
+}
+
 .pokemonGrid {
     display: flex;
     flex-wrap: wrap;
@@ -15,6 +41,7 @@
     border: 1px solid #CCC;
     margin: 10px;
     perspective: 600px;
+    border: none;
   }
 
   .card {
@@ -36,7 +63,7 @@
   .card__face--front {
     background: #3B4CCA;
     border-style: solid;
-    border-width: 4px;
+    border-width: 5px;
     border-color: black;
     color: #FFDE00;
     text-align: center;
@@ -47,6 +74,9 @@
   .card__face--back {
     background: #FFDE00;
     color: black;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #CC0000;
     transform: rotateY(180deg);
   
   }
@@ -55,6 +85,11 @@
     padding: 20px 0 10px 20px;
     font-size: 20px;
   } 
+
+  .card__face--back h5 {
+    text-decoration: none;
+    padding: 0  0 0 20px;
+  }
 
   .card.is-flipped {
     transform: rotateY(180deg);
