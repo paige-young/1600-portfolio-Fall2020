@@ -56,7 +56,7 @@ body {
 
 .projects-section {
     text-align: center;
-    padding: 5rem 2rem;
+    padding: 5rem 2rem .25rem 2rem;
     background: #D1BFA7;
     color: white;
     font-size: large;
