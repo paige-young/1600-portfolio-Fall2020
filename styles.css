@@ -1,4 +1,3 @@
-/*Base Reset*/
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +5,7 @@
 
 html{
     box-sizing: border-box;
-    /* Set font size for easy rem calculations
-   * default document font size = 16px, 1rem = 16px, 100% = 16px
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-  */
-  font-size: 62.5%;
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
@@ -53,7 +48,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     color: #fff;
     background-image: linear-gradient(62deg, #8E8E90 0%, #727275 50%, #49494B 100%);
     font-size: x-large;
@@ -61,7 +56,7 @@ body {
 
 .projects-section {
     text-align: center;
-    padding: 10rem 2rem;
+    padding: 5rem 2rem;
     background: #D1BFA7;
     color: white;
     font-size: large;
@@ -69,7 +64,7 @@ body {
 
 .projects-section h2 {
     font-size: large;
-    padding: 0 0 5px 0;
+    padding: 0 0 10px 0;
 }
 
 .projects-grid {
@@ -115,7 +110,7 @@ a img{
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 80vh;
+    height: 30vh;
     padding: 0 2rem;
     background: #8E8E90;
     color: white;
