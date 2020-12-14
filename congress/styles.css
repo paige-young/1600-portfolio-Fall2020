@@ -5,6 +5,10 @@ body {
   header {
     text-align: center;
   }
+
+  #seniorityButton, #birthdayButton {
+    
+  }
   
   .senatorGrid {
     display: flex;
@@ -12,10 +16,14 @@ body {
   }
   
   figure {
-    margin: .5rem;
+    margin: .5rem .75rem;
   }
   
   figcaption {
     display: flex;
     justify-content: space-around;
+    padding: 2px 0 5px 0 ;
+    font-size: 18px;
+    border-bottom: solid;
+    border-bottom-width: 2px;
   }
