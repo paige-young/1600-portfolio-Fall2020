@@ -1,13 +1,25 @@
 body {
-    background-color: #CECECE;
+    background-color: #DDDAD8;
   }
   
   header {
     text-align: center;
   }
 
+  header h1 {
+    font-size: 48px;
+    margin: 20px 0 12px 0;
+  }
+
   #seniorityButton, #birthdayButton {
-    
+    padding: 10px 20px;
+    margin: 5px 5px 10px 0;
+    color: white;
+    background-color: #535C5F;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px black;
   }
   
   .senatorGrid {
